@@ -1,0 +1,72 @@
+:root {
+  --mode: light;
+
+  --color-common-white: 255, 255, 255;
+  --color-common-black: 21, 21, 21;
+  --color-common-gray: 136, 136, 136;
+
+  --color-light-red: 252, 79, 79;
+  --color-light-orange: 255, 159, 67;
+  --color-light-yellow: 255, 191, 68;
+  --color-light-green: 74, 216, 113;
+  --color-light-blue: 60, 137, 255;
+  --color-light-purple: 110, 16, 104;
+  --color-light-pink: 255, 105, 180;
+
+  --color-dark-red: 255, 89, 89;
+  --color-dark-orange: 255, 169, 77;
+  --color-dark-yellow: 255, 201, 78;
+  --color-dark-green: 64, 226, 123;
+  --color-dark-blue: 70, 147, 255;
+  --color-dark-purple: 120, 26, 114;
+  --color-dark-pink: 255, 115, 190;
+
+  --primary-color: rgb(var(--color-light-purple), 1);
+  --background-color: rgb(var(--color-common-white), 1);
+  --text-color: rgba(var(--color-common-black), 1);
+  --text-secondary-color: rgba(var(--color-common-black), 0.4);
+  --border-color: rgba(var(--color-common-black), 0.1);
+
+  font-family: var(--font);
+  font-size: 14px;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  color-scheme: var(--mode);
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+  word-break: keep-all;
+  box-sizing: border-box;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --mode: dark;
+
+    --primary-color: rgb(var(--color-dark-purple), 1);
+    --background-color: rgb(var(--color-common-black), 1);
+    --text-color: rgba(var(--color-common-white), 1);
+    --text-secondary-color: rgba(var(--color-common-white), 0.4);
+    --border-color: rgba(var(--color-common-white), 0.1);
+  }
+}
+  
+input, button, select {
+  font-family: var(--font);
+  box-sizing: border-box;
+}
+  
+input:focus-visible, button:focus-visible, select:focus-visible {
+  outline: 1px dashed var(--text-color-light);
+  outline-offset: 4px;
+}
+  
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+  
+#root, #_next {
+    overflow: hidden;
+    height: 100%;
+}
