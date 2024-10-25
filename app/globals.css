@@ -18,7 +18,7 @@
   --color-dark-yellow: 255, 201, 78;
   --color-dark-green: 64, 226, 123;
   --color-dark-blue: 70, 147, 255;
-  --color-dark-purple: 120, 26, 114;
+  --color-dark-purple: 121, 17, 224;
   --color-dark-pink: 255, 115, 190;
 
   --primary-color: rgb(var(--color-light-purple), 1);
@@ -67,6 +67,6 @@ html, body {
 }
   
 #root, #_next {
-    overflow: hidden;
-    height: 100%;
+  overflow: hidden;
+  height: 100%;
 }
