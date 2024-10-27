@@ -26,6 +26,10 @@
   --text-color: rgba(var(--color-common-black), 1);
   --text-secondary-color: rgba(var(--color-common-black), 0.4);
   --border-color: rgba(var(--color-common-black), 0.1);
+  --error-color: rgb(var(--color-light-red), 1);
+  --warning-color: rgb(var(--color-light-orange), 1);
+  --success-color: rgb(var(--color-light-green), 1);
+  --info-color: rgb(var(--color-light-blue), 1);
 
   font-family: var(--font);
   font-size: 14px;
@@ -47,6 +51,10 @@
     --text-color: rgba(var(--color-common-white), 1);
     --text-secondary-color: rgba(var(--color-common-white), 0.4);
     --border-color: rgba(var(--color-common-white), 0.1);
+    --error-color: rgb(var(--color-dark-red), 1);
+    --warning-color: rgb(var(--color-dark-orange), 1);
+    --success-color: rgb(var(--color-dark-green), 1);
+    --info-color: rgb(var(--color-dark-blue), 1);
   }
 }
   
@@ -67,6 +75,6 @@ html, body {
 }
   
 #root, #_next {
-  overflow: hidden;
-  height: 100%;
+    overflow: hidden;
+    height: 100%;
 }
