@@ -9,7 +9,7 @@ export default function Header() {
       fixed z-20 bg-background
       border-b border-gray-100 dark:border-gray-800"
     >
-      <div className="w-full max-w-[1325px] h-full
+      <div className="w-full max-w-331.25 h-full
         relative mx-auto px-4
         flex items-center justify-between"
       >
