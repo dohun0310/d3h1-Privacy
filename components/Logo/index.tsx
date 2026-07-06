@@ -1,4 +1,8 @@
-import LogoProps from "@/types/logo";
+export interface LogoProps extends React.SVGProps<SVGSVGElement> {
+  size?: number;
+  color?: string;
+  className?: string;
+}
 
 export default function Logo({
   size = 64,
