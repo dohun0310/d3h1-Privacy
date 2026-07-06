@@ -117,6 +117,10 @@
   --font-weight-medium: 500;
   --font-weight-bold: 700;
   --font-weight-extrabold: 800;
+
+  --breakpoint-sm: 39.625rem;
+  --breakpoint-md: 42.125rem;
+  --breakpoint-lg: 60.25rem;
 }
 
 body {
