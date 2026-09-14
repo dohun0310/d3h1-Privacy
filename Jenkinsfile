@@ -6,10 +6,6 @@ pipeline {
         disableConcurrentBuilds()
     }
 
-    triggers {
-        pollSCM('* * * * *')
-    }
-
     parameters {
         string(name: 'HOST_PORT', defaultValue: '2007', description: 'Loopback port exposed to the reverse proxy')
     }
