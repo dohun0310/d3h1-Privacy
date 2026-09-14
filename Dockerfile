@@ -10,7 +10,7 @@ ENV NEXT_TELEMETRY_DISABLED=1
 
 COPY --from=dependencies /app/node_modules ./node_modules
 COPY . .
-RUN corepack yarn build
+RUN mkdir -p public && corepack yarn build
 
 FROM node:24-bookworm-slim AS runner
 WORKDIR /app
